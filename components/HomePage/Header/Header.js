@@ -3,13 +3,17 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'grey',
-    height: '150%',
-    width: '100%',
-    flex: 1
+    display: 'flex',
+    backgroundColor: 'lightblue',
+    color: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+    // height: '10%',
+    width: '100%'
   },
   title: {
-    padding: '10%'
+    padding: 20,
+    fontSize: 20
   }
 })
 
@@ -19,16 +23,7 @@ const Header = () => {
 
   return (
     <View style={container}>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
-      <Text style={styles.title}>This is the header</Text>
+      <Text style={styles.title}>Enter a Zipcode to see the local weather</Text>
     </View>
   )
 }

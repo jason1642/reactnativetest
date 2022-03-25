@@ -11,8 +11,7 @@ app.set('port', port);
 require('dotenv').config();
 
 
-app.use(require("./routes/blizzardApi/hearthstoneSets"));
-// app.use(require("./routes/blizzardApi/getToken"));
+app.use(require("./routes/weather/getWeather"));
 
 app.use(express.static(path.join(__dirname, 'build')));
 
